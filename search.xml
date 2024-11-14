@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>scoop-download</title>
+      <link href="/2024/08/31/scoop-download/"/>
+      <url>/2024/08/31/scoop-download/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装使用scoop的教程"><a href="#安装使用scoop的教程" class="headerlink" title="安装使用scoop的教程"></a>安装<del>使用</del>scoop的教程</h1><details class="toggle" ><summary class="toggle-button" style="">小小的私心</summary><div class="toggle-content"><p>没有千兆网搞这个太痛苦了</p></div></details><p><a href="https://chatgpt.com/">什么是scoop</a></p><h2 id="关于安装"><a href="#关于安装" class="headerlink" title="关于安装"></a>关于安装</h2><ol><li>如果电脑安装软件不需要管理员许可，请先更改<strong>组策略</strong>，不然后果自负</li><li>使用<strong>win</strong>+<strong>R</strong>输入<em>powershell</em>，运行如下<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">iwr</span> <span class="literal">-useb</span> get.scoop.sh|<span class="built_in">iex</span></span><br></pre></td></tr></table></figure></li><li>如果输出<strong>Scoop was installed successfully</strong>，恭喜你不用去烦gpt了</li></ol><h2 id="scoop的简单应用"><a href="#scoop的简单应用" class="headerlink" title="scoop的简单应用"></a>scoop的简单应用</h2><p> 安装软件（示例<strong>everything</strong>）<br> <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop install everything</span><br></pre></td></tr></table></figure><br> 卸载软件（同样示例<strong>everything</strong>）</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop uninstall everything</span><br></pre></td></tr></table></figure><p> 查找可用软件</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop search</span><br></pre></td></tr></table></figure><h2 id="更改下载源的方式"><a href="#更改下载源的方式" class="headerlink" title="更改下载源的方式"></a>更改下载源的方式</h2><blockquote><p>供网速可怜如我的人使用</p></blockquote><ol><li>打开<em>powershell</em></li><li>更换scoop的repo地址<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop config SCOOP_REPO <span class="string">&quot;https://gitee.com/scoop-installer/scoop&quot;</span></span><br></pre></td></tr></table></figure></li><li>拉取新库地址<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop update</span><br></pre></td></tr></table></figure></li></ol><h4 id="TIPS-更改组策略的方式"><a href="#TIPS-更改组策略的方式" class="headerlink" title="TIPS:更改组策略的方式"></a>TIPS:更改组策略的方式</h4><ol><li>打开Windows设置</li><li>找到<strong>编辑组策略</strong></li><li>依次选取<strong>安全设置</strong>，<strong>本地策略</strong>，<strong>安全选项</strong></li><li>在右侧启用<strong>用于内置管理员账户的管理员批准模式</strong></li><li>记得重启</li></ol><p><em>今日推荐：花椒锅巴</em></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/08/31/hello-world/"/>
+      <url>/2024/08/31/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
